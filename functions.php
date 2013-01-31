@@ -45,7 +45,7 @@ function required_starter_after_parent_theme_setup() {
 		$GLOBALS['custom_background'] = array();
 
 	// Remove custom header support: http://codex.wordpress.org/Custom_Headers
-	//remove_theme_support( 'custom-header' );
+	remove_theme_support( 'custom-header' );
 
 	// Remove support for post formats: http://codex.wordpress.org/Post_Formats
 	//remove_theme_support( 'post-formats' );

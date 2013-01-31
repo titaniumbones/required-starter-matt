@@ -57,11 +57,16 @@
 		<div class="row">
 			<header class="twelve columns required-header" role="banner">
 				<div class="row">
+                                      <hgroup class="one columns">
+
+                                           <img src="<?php echo get_option('home'); ?>/assets/kmhs.gif" alt="" max-width="100%" />
+                                      </hgroup>
+
 					<hgroup class="eight columns">
 						<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
 						<h4 id="site-description" class="subheader"><?php bloginfo( 'description' ); ?></h4>
 					</hgroup>
-					<div class="four columns">
+					<div class="three columns">
 						<?php wp_nav_menu( array(
 							'theme_location' => 'meta',
 							'container' => false,
@@ -76,7 +81,7 @@
 							 * infront of the following statement.
 							 *
 							 */
-							//get_search_form();
+							get_search_form();
 						?>
 					</div>
 				</div>
@@ -94,15 +99,6 @@
 					if ( ! is_page_template( 'page-templates/off-canvas-page.php' ) ) {
 						get_template_part( 'nav' );
 					}
-				?>
-
-				<?php
-					/**
-					 * Include our custom-header.php
-					 *
-					 * Used with the header image stuff.
-					 */
-					get_template_part( 'custom-header' );
 				?>
 			</header>
 		</div><!-- // header.php -->
