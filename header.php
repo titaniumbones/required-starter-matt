@@ -59,7 +59,7 @@
 				<div class="row">
                                       <hgroup class="one columns">
 
-                                           <img src="<?php echo get_option('home'); ?>/assets/kmhs.gif" alt="" max-width="100%" />
+                                           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.gif" alt="" max-width="100%" class="logo" />
                                       </hgroup>
 
 					<hgroup class="eight columns">
@@ -100,5 +100,7 @@
 						get_template_part( 'nav' );
 					}
 				?>
+				<?php get_template_part( 'custom-header' ); ?>
+
 			</header>
 		</div><!-- // header.php -->
